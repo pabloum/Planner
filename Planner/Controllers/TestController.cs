@@ -12,7 +12,7 @@ namespace Planner.Api.Controllers
 		}
 
 		[HttpGet("Ping")]
-		public async Task<ActionResult<string>> TestEndopoint() => Ok("Pong");
+		public ActionResult<string> TestEndopoint() => Ok("Pong");
 	}
 }
 
