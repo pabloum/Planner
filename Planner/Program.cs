@@ -2,7 +2,7 @@
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "MyALlowSpecificOrigins",
+    options.AddPolicy(name: "MyAllowSpecificOrigins",
         policy =>
         {
             policy.WithOrigins(builder.Configuration.GetSection("AppUrl").Value)
@@ -11,7 +11,6 @@ builder.Services.AddCors(options =>
                 .AllowCredentials();
         });
 });
-
 
 var startup = new Planner.Api.Startup(builder.Configuration);
 startup.ConfigureServices(builder.Services);

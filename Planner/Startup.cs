@@ -1,10 +1,9 @@
-﻿using System;
-using Planner.Api.Installers;
+﻿using Planner.Api.Installers;
 using Planner.Api.Middleware;
 
 namespace Planner.Api
 {
-	public partial class Startup
+    public partial class Startup
 	{
 		public IConfiguration configRoot { get; }
 
